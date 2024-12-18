@@ -82,7 +82,7 @@ function install_client() {
     ;;
   esac
   mkdir -p /usr/local/NodeStatus/client/
-  cd /tmp && wget -N "https://revproxy.frknet.us.kg/https://github.com/cokemine/nodestatus-client-go/releases/latest/download/status-client_linux_${arch}.tar.gz"
+  cd /tmp && wget -N "https://ghp.ci/https://github.com/cokemine/nodestatus-client-go/releases/latest/download/status-client_linux_${arch}.tar.gz"
   tar -zxvf "status-client_linux_${arch}.tar.gz" status-client
   mv status-client /usr/local/NodeStatus/client/
   chmod +x /usr/local/NodeStatus/client/status-client
